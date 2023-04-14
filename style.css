@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+body{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: hsl(0, 0%, 94%);
+}
+.all{
+  display: flex;
+  flex-direction: column;
+}
+main{
+  margin: auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 44rem;
+  width: 100%;
+}
+.admy{
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 1rem 1rem 12rem 1rem;
+  padding: 2rem;
+}
+.dmy{
+  display: flex;
+}
+.dayi,.monthi,.yeari{
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.dayi label,.monthi label,.yeari label{
+  color: #716f6f;
+  letter-spacing: .3rem;
+  font-size: .8rem;
+}
+.dayi input,.monthi input,.yeari input{
+  padding: 1rem;
+  font-weight: 700;
+  width: 7rem;
+  font-size: 2rem;
+  border-radius: .5rem;
+  border:1px solid  #dbdbdb;
+  outline: none;
+  margin:.5rem 0rem;
+}
+#day:focus,#month:focus,#year:focus{
+  border:1px solid hsl(259, 100%, 65%);
+}
+.dayi i,.monthi i,.yeari i{
+  font-size: .8rem;
+  font-weight: 400;
+  color: hsl(0, 100%, 67%);
+}
+.bhr{
+  position: relative;
+}
+.bhr hr{
+  border:1px solid hsl(0, 0%, 86%);
+  margin-top: 2.5rem;
+}
+#btn{
+  position: absolute;
+  background-color: hsl(259, 100%, 65%);
+  right: 0;top: .2rem;
+  padding: 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+#btn:hover{
+  background: hsl(0, 0%, 8%);
+}
+.dmys{
+  display: flex;
+  flex-direction: column;
+}
+.dayt,.montht,.yeart{
+  display: flex;
+  align-items: center;
+}
+#days,#months,#years{
+  color: hsl(259, 100%, 65%);
+  font-size: 6rem;
+}
+.dayt h1,.montht h1,.yeart h1{
+  font-size: 6rem;
+  margin: 0;
+}
+.attribution { 
+    font-size: 1.2rem;
+     text-align: center;
+      margin-top: 2rem;
+    }
+.attribution a { color: hsl(228, 45%, 44%); }
+@media all and (max-width:750px){
+  .admy{
+    margin: 1rem;
+  }
+}
+@media all and (max-width:620px){
+  .admy{
+    border-radius: 1rem 1rem 8rem 1rem;
+    padding: 1rem;
+
+  }
+  .dayi,.monthi,.yeari{
+    margin-right: 1rem;
+  }
+  .dayi label,.monthi label,.yeari label{
+    font-size: .7rem;
+  }
+  .dayi input,.monthi input,.yeari input{
+    width: 5rem;
+    font-size: 1.5rem;
+  }
+  .dayi i,.monthi i,.yeari i{
+    font-size: .7rem;
+  }
+  #btn{
+    right: 10rem;
+  }
+  #days,#months,#years,.dayt h1,.montht h1,.yeart h1{
+    font-size: 4.5rem;
+  }
+}
+
+@media all and (max-width:460px){
+  #days,#months,#years,.dayt h1,.montht h1,.yeart h1{
+    font-size: 3rem;
+  }
+  .dmys{
+    margin-top: 1rem;
+  }
+  .dayi label,.monthi label,.yeari label{
+    font-size: .6rem;
+  }
+  .dayi input,.monthi input,.yeari input{
+    width: 3.5rem;
+    font-size: 1rem;
+    padding: .7rem;
+  }
+  .dayi i,.monthi i,.yeari i{
+    font-size: .5rem;
+  }
+}

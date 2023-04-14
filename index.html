@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="all">
+  <main>
+    <div class="admy">
+    <div class="dmy">
+      <div class="dayi">
+        <label id="lday" for="day">DAY</label>
+        <input id="day" name="day" minlength="0" maxlength="2" type="text" placeholder="DD">
+        <i id="errday"></i>
+      </div>
+      <div class="monthi">
+        <label id="lmonth" for="month">MONTH</label>
+        <input id="month" name="month" minlength="1" maxlength="2" type="text" placeholder="MM">
+        <i id="errmonth"></i>
+      </div>
+      <div class="yeari">
+        <label id="lyear" for="year">YEAR</label>
+        <input id="year" name="year" minlength="0" maxlength="4" type="text" placeholder="YYYY">
+        <i id="erryear"></i>
+      </div>
+    </div>
+    <div class="bhr">
+      <hr>
+      <img id="btn" src="./assets/images/icon-arrow.svg" alt="">
+    </div>
+    <div class="dmys">
+      <div class="yeart">
+        <span id="years">--</span>
+        <h1><i>years</i></h1>
+      </div>
+      <div class="montht">
+        <span id="months">--</span>
+        <h1><i>months</i></h1>
+      </div>
+      <div class="dayt">
+        <span id="days">--</span>
+        <h1><i>days</i></h1>
+      </div>
+    </div>
+  </div>
+  </main>
+  <div class="attribution">
+    Coded by <a href="https://linktr.ee/ilkenza" target="_blank">Ilkenza</a>.
+  </div>
+</div>
+  <script src="./script.js"></script>
+</body>
+</html>
